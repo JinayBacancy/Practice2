@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h2>
+            This is DOM1
+        </h2>
+        <p3>
+            This is P tag<br><br>
+            <u>underlined</u><br><br>
+        </p3>
+        <div>
+            <button type="button">click</button>
+        </div>
+    </div>
+    <div>
+
+    </div>
+    <script>
+        var v = document.body.childNodes.length;
+        console.log(v);
+        // for (var i = 0; i < v; i++) {
+        //     console.log(document.body.childNodes[i]);
+        // }
+        // for (let node in document.body.childNodes) {
+        //     console.log(node); // shows all nodes from the collection
+        // }
+        // for (let node of document.body.childNodes) {
+        //     console.log(Array.from(document.body.childNodes).filter); // shows all nodes from the collection
+        // }
+        // for (var i = 0; i < v; i++) {
+        //     console.log(document.body.children[i]);
+        // }
+
+        console.log(document.body.div.childNodes);
+    </script>
+    <script>
+        document.write("hello");
+    </script>
+</body>
+
+</html>

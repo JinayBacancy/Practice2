@@ -1,0 +1,29 @@
+<!doctype html>
+
+<body>
+    <!-- mark the div to show "name" here -->
+    <div show-info="name"></div>
+    <!-- and age here -->
+    <div show-info="age"></div>
+
+    <script>
+        // the code finds an element with the mark and shows what's requested
+        let user = {
+            name: "Pete",
+            age: 25
+        };
+
+        // for (let div of document.querySelectorAll('[show-info]')) {
+        //     // insert the corresponding info into the field
+        //     let field = div.getAttribute('show-info');
+        //     div.innerHTML = user[field]; // first Pete into "name", then 25 into "age"
+        // }
+
+        for (let div of document.querySelectorAll('[show-info]')) {
+            // insert the corresponding info into the field
+            let field = div.getAttribute('show-info');
+            div.innerHTML = user[field]; // first Pete into "name", then 25 into "age"
+            document.write(field);
+        }
+    </script>
+</body>
